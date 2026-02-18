@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fusion Wardrobe - Blend Styles, Embrace Fusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #8B4513;
+            background-color: #F5F5DC;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #8B4513;
+            color: #FFFFFF;
+            padding: 1rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #F5F5DC;
+        }
+        section {
+            padding: 4rem 2rem;
+            min-height: 100vh;
+        }
+        .hero {
+            background: url('https://picsum.photos/1920/1080?random=10') no-repeat center center/cover;
+            color: #FFFFFF;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            background-color: #F5F5DC;
+            color: #8B4513;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #FFFFFF;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product-card, .blog-card, .testimonial-card {
+            background-color: #FFFFFF;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product-card img, .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+        .carousel-item {
+            min-width: 100%;
+            transition: transform 0.5s;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #8B4513;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #8B4513;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 2rem;
+        }
+        .newsletter {
+            margin-bottom: 1rem;
+        }
+        .newsletter input {
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Fusion Wardrobe</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Blend Styles, Embrace Fusion.</h1>
+        <p>Welcome to The Fusion Wardrobe – where cultures collide in fashion. Discover eclectic, sustainable pieces that celebrate diversity and individuality.</p>
+        <a href="#collections" class="cta-button">Explore Now</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At The Fusion Wardrobe, we fuse global inspirations into wearable art. Our mission is to create apparel that blends traditional motifs with modern trends, empowering you to express your unique fusion of styles.</p>
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+
+    <section id="collections">
+        <h2>Collections</h2>
+        <div class="grid">
+            <div class="product-card">
+                <img src="https://picsum.photos/250/200?random=11" alt="Global Fusion">
+                <h3>Global Fusion</h3>
+                <p>Blended patterns from around the world.</p>
+                <p>$50</p>
+                <a href="#" class="cta-button">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="https://picsum.photos/250/200?random=12" alt="Eco Chic">
+                <h3>Eco Chic</h3>
+                <p>Sustainable fabrics with a twist.</p>
+                <p>$60</p>
+                <a href="#" class="cta-button">Add to Cart</a>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <section id="lookbook">
+        <h2>Lookbook</h2>
+        <p>Immerse yourself in our fusion-inspired lookbooks. See how our pieces blend seamlessly for everyday elegance and bold statements.</p>
+        <div class="grid">
+            <img src="https://picsum.photos/250/200?random=13" alt="Lookbook Image">
+            <img src="https://picsum.photos/250/200?random=14" alt="Lookbook Image">
+            <!-- Add more images -->
+        </div>
+        <a href="#collections" class="cta-button">Get the Look</a>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Stay inspired with our blog – exploring fusion trends, cultural stories, and styling tips from The Fusion Wardrobe community.</p>
+        <div class="grid">
+            <div class="blog-card">
+                <img src="https://picsum.photos/250/200?random=15" alt="Blog Post">
+                <h3>Fusion Trends 2023</h3>
+                <p>Discover how to mix global styles...</p>
+                <a href="#" class="cta-button">Read Full Post</a>
+            </div>
+            <!-- Add more blog cards -->
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Hear from our fusion-loving community!</p>
+        <div class="carousel" id="testimonial-carousel">
+            <div class="carousel-item testimonial-card">
+                <p>"The Fusion Wardrobe lets me blend my heritage with modern vibes – absolutely love it!" - Maya L.</p>
+            </div>
+            <div class="carousel-item testimonial-card">
+                <p>"Eclectic and sustainable – my new go-to brand!" - Raj K.</p>
+            </div>
+        </div>
+        <a href="#" class="cta-button">Share Your Story</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a fusion idea or question? Let's connect and create something amazing together!</p>
+        <form class="contact-form" id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="cta-button">Send It</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="newsletter">
+            <p>Join the Fusion – Get exclusive blends, style tips, and early access to collections!</p>
+            <input type="email" placeholder="Your Email">
+            <button class="cta-button">Subscribe</button>
+        </div>
+        <p>&copy; 2023 The Fusion Wardrobe. All rights reserved.</p>
+        <a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a>
+        <br>
+        <a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+
+    <script>
+        // JavaScript for Interactivity
+        // Smooth scrolling for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple testimonial carousel
+        let currentIndex = 0;
+        const carousel = document.getElementById('testimonial-carousel');
+        const items = carousel.children;
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % items.length;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }, 3000);
+
+        // Newsletter form simulation
+        document.querySelector('.newsletter button').addEventListener('click', () => {
+            alert('Subscribed! Check your email for fusion updates.');
+        });
+
+        // Contact form simulation
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message sent! We\'ll blend back soon.');
+        });
+    </script>
+</body>
+</html>
